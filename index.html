@@ -18,7 +18,7 @@
 
         .header-top {
             background-color: #6f4e37;
-            padding: 20px 0;
+            padding: 25px 0;
             width: 100%;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
@@ -36,14 +36,21 @@
             padding: 30px; 
             border-radius: 15px; 
             box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
-            max-width: 800px; 
-            margin: 30px auto; 
+            max-width: 850px; 
+            margin: 40px auto; 
+        }
+
+        /* Seção Sobre Você */
+        .sobre-mim {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #ece0d1;
         }
 
         .estante {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
             margin-top: 30px;
         }
 
@@ -53,11 +60,10 @@
             padding: 20px;
             border-radius: 10px;
             text-align: left;
-            position: relative;
         }
 
         .rating-cafe {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin: 10px 0;
             color: #6f4e37;
         }
@@ -71,10 +77,7 @@
             border: 1px solid #ece0d1;
         }
 
-        summary {
-            font-weight: bold;
-            color: #6f4e37;
-        }
+        summary { font-weight: bold; color: #6f4e37; }
 
         .resenha-texto {
             font-size: 0.95rem;
@@ -105,35 +108,37 @@
     </div>
 
     <div class="container">
-        <h1>Minha Estante de Resenhas</h1>
-        <p>Notas de café e mistérios desvendados.</p>
+        
+        <div class="sobre-mim">
+            <h1>Bem-vinda ao Café & Código</h1>
+            <p>Olá! Eu sou a <b>Raquel</b>, estudante de <b>Análise e Desenvolvimento de Sistemas (ADS)</b>.</p>
+            <p>Este é o meu refúgio digital onde compartilho minha jornada acadêmica, <b>minhas leituras favoritas</b> e, claro, muito café.</p>
+        </div>
 
+        <h2>📖 Minha Estante de Resenhas</h2>
         <div class="estante">
+            
             <div class="livro-card">
                 <div class="badge">Suspense Psicológico</div>
-                <h3>📖 A Última Casa da Rua Needless</h3>
-                <p style="font-size: 0.9rem; margin-top: -10px;"><i>Catriona Ward</i></p>
+                <h3>A Última Casa da Rua Needless</h3>
+                <p style="font-size: 0.85rem; margin-top: -10px;"><i>Catriona Ward</i></p>
                 
-                <div class="rating-cafe">
-                    ☕ ☕ ☕ ☕ ☕
-                </div>
+                <div class="rating-cafe">☕ ☕ ☕ ☕ ☕</div>
                 
                 <details>
                     <summary>Status: Concluído ✓</summary>
                     <div class="resenha-texto">
-                        <p>Sabe aquele livro que você termina e precisa de silêncio para processar? É este.</p>
-                        
-                        <p>A história gira em torno de uma casa isolada onde vivem <b>Ted</b>, sua filha Lauren e uma gata chamada <b>Olívia</b> (que lê a Bíblia!). Mas o verdadeiro fantasma é o <b>desaparecimento de uma menina há 11 anos</b>.</p>
-                        
-                        <p><b>Minha impressão:</b> Uma leitura perturbadora. A narrativa nos prende em um labirinto mental e esconde a verdade até o último segundo. Se você gosta de reviravoltas, prepare o café!</p>
+                        <p>A história gira em torno de uma casa isolada onde vivem <b>Ted</b>, sua filha Lauren e a gata <b>Olívia</b> (que lê a Bíblia!). O mistério envolve o <b>desaparecimento de uma menina há 11 anos</b>.</p>
+                        <p><b>Minha impressão:</b> Uma leitura perturbadora que nos prende em um labirinto mental. A autora esconde a verdade até o último segundo!</p>
                     </div>
                 </details>
             </div>
 
             <div class="livro-card" style="opacity: 0.6; border-style: dashed;">
-                <h3>📖 Próximo Mistério</h3>
+                <h3>Próximo Mistério</h3>
                 <p>O bule ainda está enchendo...</p>
             </div>
+
         </div>
     </div>
     
